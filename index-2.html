@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Design/index-2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber-Sign up page</title>
+</head>
+
+<style>
+    body {
+        font-size: 10px;
+        --prime-color: #4D13D1;
+        --text-color: #000000bd;
+    }
+    
+    .wrapper {
+        font-size: 1rem;
+        font-family: raleway, sans-serif;
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+        display: flex;
+        height: 55rem;
+    }
+    
+    img {
+        max-width: 27rem;
+    }
+    
+    .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    a {
+        color: var(--prime-color);
+    }
+    
+    .sign-in {
+        width: 50rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mid {
+        max-width: 25rem;
+        margin: 4rem;
+    }
+    
+    #create {
+        background-color: var(--prime-color);
+        color: #fff;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: inherit;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        min-width: 18rem;
+        height: 2.5rem;
+        border-radius: 0.3rem;
+    }
+    
+    .scroll {
+        background-color: var(--prime-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        width: 70%;
+        margin: -1rem;
+    }
+    
+    .text {
+        text-align: center;
+    }
+    
+    .text>p {
+        max-width: 26rem;
+        font-weight: 300;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    
+    form input {
+        width: 15rem;
+        height: 2.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    form label {
+        margin: 0.3rem 0;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        border: 0.01rem solid #00000031;
+        border-radius: 0.15rem;
+        font-size: inherit;
+        padding: 0 0.8rem;
+    }
+    /* mobile view */
+    
+    @media screen and (max-width:480px) {
+        .wrapper {
+            flex-wrap: wrap;
+        }
+        img {
+            max-width: 24rem;
+        }
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="sign-in">
+            <div class="mid">
+                <div class="top">
+                    Fiber
+                </div>
+                <div class="fill">
+                    <h1>
+                        Create your Fiber account
+                    </h1>
+                    <form>
+                        <label id="YourName" for="Your-Name">
+                            Your Name
+                    </label>
+                        <input type="text" id="Your-Name" placeholder="John Doe">
+
+                        <label id="Email" for="e-mail">
+                        E-mail
+                    </label>
+                        <input type="text" id="e-mail" placeholder="john@example.com">
+
+                        <label id="pswrd" for="pass">
+                            Password
+                    </label>
+                        <input id="pass" type="password" placeholder="At least 8 characters">
+                    </form>
+                    <div class="tandc">
+                        <input type="checkbox" id="terms">
+                        <p>
+                            By creating an account on Fiber, you agree to the <a href="#">Terms & Conditions</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button for="form" id="create">
+                        Create Fiber Account
+                </button>
+                </div>
+                <div class="sing-up">
+                    <p>
+                        Already have an account? <a href="#">Sign in</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll">
+            <div class="img">
+                <img src="Assets/Sign Up Image.png" alt="templates">
+            </div>
+            <div class="text">
+                <h1>
+                    Unparalleled Templates
+                </h1>
+                <p>
+                    Crafted by a team of professional designers, our templates are eunparalleled in the market.
+                </p>
+                <div class="circle">
+                    <div class="c1"></div>
+                    <div class="c2"></div>
+                    <div class="c3"></div>
+                    <div class="c4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
